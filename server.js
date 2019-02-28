@@ -11,7 +11,7 @@ var messages = [
 ]
 
 app.get('/messages', (req, res) =>{
-    res.send('hello')
+    res.send(messages)
 })
 
 var server = app.listen(8000, () => { 
