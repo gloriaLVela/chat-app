@@ -6,7 +6,7 @@ var app = express()
 app.use(express.static(__dirname))
 
 var messages = [
-    {name: 'Tim', message: 'Hi'},
+    {name: 'Tim', message: 'Hola'},
     {name: 'Jane', message: 'Hello'}
 ]
 
