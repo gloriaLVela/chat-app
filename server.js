@@ -5,6 +5,11 @@ var app = express()
 
 app.use(express.static(__dirname))
 
+var messages = [
+    {name: 'Tim', message: 'Hi'},
+    {name: 'Jane', message: 'Hello'}
+]
+
 app.get('/messages', (req, res) =>{
     res.send('hello')
 })
