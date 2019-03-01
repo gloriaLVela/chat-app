@@ -25,6 +25,8 @@ app.get('/messages', (req, res) =>{
 app.post('/messages', (req, res) =>{
     //console.log(req.body)
     messages.push(req.body)
+    // Submit an event from the server to all clients notifying them of a new message
+    io.emit('message', req.body)
     res.sendStatus(200)
 })
 
